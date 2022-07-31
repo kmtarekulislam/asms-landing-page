@@ -1,0 +1,627 @@
+/*--------------------------------------------------------------
+[Master Stylesheet]
+
+Project		: Abacus School Management Software
+Version		: 1.0
+Designed By : WDD School;
+Engineer 	: Kazi Md Tarekul Islam;
+Primary user-select: :	Open Source
+---------------------------------------------------------------*/
+
+/*-------------------------------------------------------------
+	----- theme color -----
+	Text Color Light 	: #f2f2f2;
+	Text Color Dark 	: #1a1a1a;
+
+	light bg color 		: #e6faff;
+	bright color 		: #008fb3;
+	dark bg color 		: #002933;
+	primary color 		: #008fb3   #ff9500 ;
+	secondary color 	: #006680   #cc7700  ;
+
+   ----- Common Style -----
+-----------------------------------------------------------------*/
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #1a1a1a;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Jost", sans-serif;
+}
+
+section{
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+section#header, section#hero{
+	background-color: #003d4d;
+}
+
+
+
+section#modules, section#print-pub, section#admin-panel, section#services,section#clients  {
+	background-color: #f2f2f2;
+}
+
+.container{
+	min-width: 85%;
+}
+
+
+#section-title {
+  	text-align: center;
+  	padding-top: 80px;
+}
+
+
+#section-title h2 {
+  	font-size: 32px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	margin-bottom: 20px;
+  	padding-bottom: 20px;
+  	position: relative;
+  	color: #006680;
+}
+
+#section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+#section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+#section-title p {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  font-family: solaimanlipi;
+  font-size: 140%;
+}
+
+
+/*--------------------------------------------------------------
+					Navbar Style
+--------------------------------------------------------------*/
+
+#header{
+	background-color: #003d4d;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 978;
+}
+
+#header .navbar{
+	background-color: #003d4d;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#header .navbar .nav-item{
+	 margin-left: 20px;
+}
+
+#header .navbar .nav-link{
+	 margin-left: 0px;
+	 margin-right: 0px;
+	 padding-left: 0;
+	 padding-right: 0;
+    border-bottom: 2px solid transparent;  
+}
+
+#header .navbar .nav-link{
+  color: #f2f2f2;
+}
+
+#header .navbar .nav-link:hover, 
+#header .navbar .nav-link:focus, 
+#header .navbar .nav-link:active
+
+{
+	border-bottom: 2px solid #ff9500;
+	transition: 0.3s;
+    color: orange;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+					Hero sSection
+--------------------------------------------------------------*/
+#hero{
+	padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 
+}
+
+#hero h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 24px;
+  margin-bottom: 20px;  
+}
+
+#hero h3 {
+  color: white;
+  margin-bottom: 50px;
+  font-size: 22px;
+  font-family: solaimanlipi;
+}
+
+#hero .btn-get-started {
+  	font-family: "Jost", sans-serif;
+  	font-weight: 500;
+  	font-size: 16px;
+  	letter-spacing: 1px;
+  	display: inline-block;
+  	padding: 10px 28px 11px 28px;
+  	border-radius: 50px;
+  	transition: 0.5s;
+  	margin: 10px 0 0 0;
+  	color: #fff;
+  	background: #ff9500;
+}
+
+
+#hero .btn-watch-video {
+  	font-size: 16px;
+  	display: flex;
+  	align-items: center;
+  	transition: 0.5s;
+  	color: #fff;
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0 0 10px;
+}
+
+#hero .btn-watch-video i {
+  border: 1px solid white;
+  padding-top: 11px;
+  padding-left: 3px;
+  border-radius: 100%;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  margin-right: 9px;
+}
+
+
+#hero .btn-watch-video i:hover {
+  color: #ff9500;
+  border-color: #ff9500;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+					Dashboard Section
+--------------------------------------------------------------*/
+
+#dashboard #dashboard-item{
+	font-family: solaimanlipi;
+  font-size: 120%;
+  padding: 6px 5px;
+}
+
+#dashboard #dashboard-item i{
+  margin-right: 15px;
+  color: #ff9500;  
+}
+
+#dashboard img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+					Module Section
+--------------------------------------------------------------*/
+
+.accordion > .card {
+  	margin-top: 10px;
+  	color: #404040;  	
+  	border-style: none;
+}
+
+
+.accordion > .card > .card-header {
+  	border-radius: 5px;
+  	border-style: none;  
+  	background-color: #ffffff; 
+  	padding: 10px; 
+}
+
+
+.accordion > .card > .card-header h2 button {
+  	font-size: 24px;  	
+  text-transform: uppercase;
+}
+
+.accordion > .card > .card-header h2 span {
+  color: #ff9500;  
+  margin-right: 10px;
+}
+
+.accordion > .card  .card-body {
+  	border-radius: 0px 0px 5px 5px;
+  	border-style: none;  
+  	background-color: #ffffff; 
+  	padding-top: 0px;
+}
+
+.card-body {
+  	padding-top: 0px;
+  	margin-bottom: 0;
+  	font-family: kalpurush;
+  	font-size: 120%;
+  	padding-left: 50px;
+  	text-align: justify;
+}
+
+.accordion > .card  .btn-link{
+	color: gray;
+	font-weight: bold;
+}
+
+.accordion > .card  .btn-link:hover{
+	text-decoration: none;
+}
+
+.btn.focus, .btn:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn-link:hover, .btn-link:focus, .btn.focus {
+  text-decoration: none;
+}
+
+#modules .modules-image{
+	width: 90%;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+          Audit Section
+--------------------------------------------------------------*/
+
+#audit h3{
+    font-family: 'Roboto',sans-serif;
+}
+
+#audit h3 i{
+    color: #ff9500;  
+    margin-right: 10px;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+          Print & Pub Section
+--------------------------------------------------------------*/
+
+#print-pub h3{
+    font-family: 'Roboto',sans-serif;
+}
+
+
+#print-pub h3 i{
+    color: #ff9500;  
+    margin-right: 10px;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+          Backup Section
+--------------------------------------------------------------*/
+
+#backup{
+    height: auto;
+}
+#backup p{
+    font-family: 'kalpurush',sans-serif;
+    font-size: 120%;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+          Admin Panel Section
+--------------------------------------------------------------*/
+
+#admin-panel p{
+    font-family: 'kalpurush',sans-serif;
+    font-size: 120%;
+}
+
+
+
+
+/*--------------------------------------------------------------
+          Features Section
+--------------------------------------------------------------*/
+
+
+#features .nav-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    background-color: #ff9500;
+    color: white;
+}
+
+#features .nav a {
+    color: #ff9500;
+}
+
+#features .tab-content img{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+
+/*--------------------------------------------------------------
+          Service Section
+--------------------------------------------------------------*/
+#services #icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+
+#services #icon-box #icon {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#services #icon-box #icon img {
+  width: 100%;
+}
+
+#services #icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+          Why Us Section
+--------------------------------------------------------------*/
+
+#why-us h3{
+  font-weight: bold;
+}
+
+#why-us h3 span{
+  color: #ff9500;  
+  margin-right: 10px;
+}
+
+
+
+#why-us p{
+    font-family: kalpurush;
+    font-size: 120%;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+                    get start Section
+--------------------------------------------------------------*/
+
+#getstart {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(255, 255, 255,0.8)), url("../images/bg-getstart.png") fixed center center;
+    background-size: auto, auto;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+                    Client Section
+--------------------------------------------------------------*/
+
+#clients img {
+    max-width: 50%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 10px;
+    filter: grayscale(100);
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 1px lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+            Footer
+--------------------------------------------------------------*/
+#footer{
+    position: relative;
+    z-index: 1;
+    background-color: #00141a;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: lightgray;
+    font-family: 'Roboto',sans-serif;
+}
+
+#footer h3, h4{
+    font-family: 'Roboto',sans-serif;
+}
+
+#footer a{
+    color: lightgray;
+}
+
+
+#footer #news-letter{
+    padding-top: 50px;
+}
+
+
+#footer #news-letter input{
+    height: 48px;
+    border: none;
+    width: 67% !important;
+    font-weight: 400;
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px;
+}
+
+#footer #news-letter button{
+    color: #3a414e;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-radius: 3px;    
+    padding: 8px 20px;
+    border: 0;
+    font-size: 14px;
+    background: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    left: -50px;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+						Preloader
+--------------------------------------------------------------*/
+#preloader {
+  background: #002933;	
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  display: none;
+
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #002933;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
